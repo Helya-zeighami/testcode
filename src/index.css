@@ -1,13 +1,118 @@
 body {
+  background-color: #ffe6f2; 
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Styles for the heading */
+h1 {
+  color: #ff66b2; 
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Button styles */
+button {
+  background-color: #ff66b2; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; 
+}
+
+button:hover {
+  background-color: #ff3385; 
+}
+
+/* Input and select styles */
+input, select {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  border: 1px solid #ff66b2; 
+  outline: none;
+  width: 100%;
+}
+
+/* Form styling for centering */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ul{
+  padding:0 ;
+}
+/* List item styles for tasks */
+li {
+  background-color: #ffffff; 
+  border: 1px solid #ff99cc; 
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.task-title {
+  flex-grow: 1;
+  font-size: 1.2rem;
+}
+
+.task-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .task-actions {
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  input, select {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  button {
+    padding: 8px 10px;
+  }
+
+  input, select {
+    padding: 8px;
+    margin: 5px;
+  }
 }

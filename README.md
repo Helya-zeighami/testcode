@@ -1,46 +1,102 @@
-# Getting Started with Create React App
+Here’s a **README.md** file for your **Pretty Pink Task Manager** project. This will help others understand how to set up, run the project.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# Pretty Pink Task Manager
 
-In the project directory, you can run:
+This is a **Task Management Application** built with **React** and **Redux**. The app allows users to add, edit, delete, and filter tasks. It provides a visually appealing pink-themed UI and uses **React Hooks** (including `useState`, `useEffect` and `useMemo`) to manage the component's state and optimize performance. Tasks are filtered by their status (All, Completed, or Incomplete).
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Add Task**: Add a new task with a title, description, and due date.
+- **Edit Task**: Edit an existing task, including updating its title, description, or due date.
+- **Delete Task**: Remove a task from the list.
+- **Complete Task**: Mark tasks as complete or incomplete.
+- **Filter Tasks**: Filter tasks based on their status: All, Completed, or Incomplete.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+- **React**: Frontend library for building user interfaces.
+- **Redux**: State management library.
+- **TypeScript**: Type safety and static analysis.
+- **React Hooks**: Used to manage component state (`useState`, `useEffect`).
+- **CSS**: For styling the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get a local copy of the project up and running, follow these steps.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You need to have **Node.js** and **npm** installed on your system.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/)
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone the repository to your local machine:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/helya-zeighami/testcode.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Navigate to the project directory:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+   ```bash
+   cd pretty-pink-task-manager
+   ```
 
-## Learn More
+3. Install the required dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   ```bash
+   npm install
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running the Application
+
+To run the application locally:
+
+```bash
+npm start
+```
+
+This will start the app in development mode and automatically open it in your default browser at `http://localhost:3000`.
+
+### Running the Production Build
+
+To create a production-ready build of the app:
+
+```bash
+npm run build
+```
+
+This will create an optimized production build of your application, which you can deploy.
+
+## Folder Structure
+
+Here’s a basic overview of the folder structure:
+
+```
+/pretty-pink-task-manager
+│
+├── /public                # Public assets and HTML template
+├── /src                   # Source code of the React app
+│   ├── /components        # React components for the app (TaskForm, TaskList, Filter)
+│   ├── /redux             # Redux store and slice for managing tasks
+│   ├── /App.tsx           # Main app component
+│   ├── /index.tsx         # Entry point of the app
+│   └── /App.css           # Styling for the app
+│
+├── package.json           # NPM scripts and dependencies
+├── tsconfig.json          # TypeScript configuration
+└── README.md              # Documentation for the project
+```
+
+### Key Components
+
+- **App.tsx**: The main component that brings everything together.
+- **TaskForm.tsx**: A component that handles adding and editing tasks.
+- **TaskList.tsx**: Displays the list of tasks.
+- **Filter.tsx**: Allows filtering tasks by status.
+- **Redux Slice**: Manages task-related state.
